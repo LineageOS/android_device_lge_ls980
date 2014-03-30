@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "bae84128_d15fa070",
+        "filename": "device.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 5505
+      },
+      "writtenOn": "2014-03-30T18:52:26Z",
+      "side": 0,
+      "message": "I\u0027m not 100% sure if this is really needed as it works fine without. I checked a few other Sprint devices like m7spr and this wasn\u0027t found there. I did this mainly so there\u0027s 2 less options now in Mobile networks menu.",
+      "revId": "b9878310b50e721e8897c80db32c3f25a01514df",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}

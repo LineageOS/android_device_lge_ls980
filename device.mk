@@ -37,9 +37,13 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.telephony.cdma.xml:system/etc/permissions/android.hardware.telephony.cdma.xml
 
-# NFC packages
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/com.nxp.mifare.xml:system/etc/permissions/com.nxp.mifare.xml
+
+# NFC Support
 PRODUCT_PACKAGES += \
-    nfc.default \
     libnfc \
     libnfc_jni \
-    Nfc
+    Nfc \
+    Tag \
+    NfcNci

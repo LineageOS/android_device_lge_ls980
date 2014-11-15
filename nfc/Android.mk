@@ -1,5 +1,4 @@
-#
-# Copyright (C) 2013 The CyanogenMod Project
+# Copyright (C) 2011 The Android Open Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -12,18 +11,15 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-#
 
-include device/lge/g2-common/BoardConfigCommon.mk
+LOCAL_PATH := $(call my-dir)
 
-TARGET_KERNEL_CONFIG := cyanogenmod_ls980_defconfig
+include $(CLEAR_VARS)
 
-TARGET_OTA_ASSERT_DEVICE := ls980,g2,galbi
+LOCAL_MODULE := nfc_nci.pn544
+LOCAL_MODULE_PATH := $(TARGET_OUT_SHARED_LIBRARIES)/hw
+LOCAL_SRC_FILES := nfc_hw.c
+LOCAL_SHARED_LIBRARIES := liblog libcutils
+LOCAL_MODULE_TAGS := optional
 
-G2_DTS_TARGET := msm8974-g2-spr
-
-BOARD_SEPOLICY_DIRS += \
-    device/lge/ls980/sepolicy
-
-BOARD_SEPOLICY_UNION += \
-    nfc.te
+include $(BUILD_SHARED_LIBRARY)

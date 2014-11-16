@@ -41,6 +41,10 @@ PRODUCT_PACKAGES += \
     nfc_nci.pn54x.default \
     NfcNci
 
+# NFC config
+PRODUCT_COPY_FILES += \
+    external/libnfc-nci/halimpl/pn54x/libnfc-nxp-PN547C2_example.conf:system/etc/libnfc-nxp.conf
+
 # NFC packages
 #PRODUCT_PACKAGES += \
 #    nfc.default \

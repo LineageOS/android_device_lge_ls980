@@ -21,3 +21,6 @@ TARGET_KERNEL_CONFIG := cyanogenmod_ls980_defconfig
 TARGET_OTA_ASSERT_DEVICE := ls980,g2,galbi
 
 G2_DTS_TARGET := msm8974-g2-spr
+
+# Enable FM radio on select targets only
+AUDIO_FEATURE_ENABLED_FM := true

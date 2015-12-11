@@ -24,3 +24,6 @@ G2_DTS_TARGET := msm8974-g2-spr
 
 # RIL
 BOARD_RIL_CLASS := ../../../device/lge/ls980/ril/
+
+# NFC
+BOARD_NFC_CHIPSET := pn547

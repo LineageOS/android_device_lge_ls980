@@ -15,6 +15,5 @@ etc/firmware/adsp.b12:vendor/firmware/adsp.b12
 etc/firmware/adsp.mdt:vendor/firmware/adsp.mdt
 
 # NFC
-lib/hw/nfc.default.so:vendor/lib/hw/nfc.default.so
 lib/hw/nfc.lg.so:vendor/lib/hw/nfc.lg.so
 vendor/firmware/libpn544_fw.so
